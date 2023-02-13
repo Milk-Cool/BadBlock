@@ -129,7 +129,7 @@ Blockly.defineBlocksWithJsonArray([
 		"type": "id",
 		"message0": "Set device ID to %1",
 		"args0": [
-			{ "type": "field_number", "name": "ID" }
+			{ "type": "field_input", "name": "ID" }
 		],
 		"colour": 200,
 		"nextStatement": null,
