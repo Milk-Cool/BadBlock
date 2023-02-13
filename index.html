@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BadBlock</title>
+		<meta charset="utf-8">
+		<script src="https://unpkg.com/blockly/blockly.min.js"></script>
+		<script src="blocks.js"></script>
+		<script src="generator.js"></script>
+		<script src="script.js" defer></script>
+	</head>
+	<body style="padding: 0; margin: 0">
+		<div id="top" style="width: 100vw; height: 64px">
+			<button onclick="generate()" style="height: 64px; padding: 16px">Generate code!</button>
+			<button onclick="save()" style="height: 64px; padding: 16px">Save</button>
+			<button onclick="_open()" style="height: 64px; padding: 16px">Open</button>
+		</div>
+		<div id="blocklyDiv" style="height: calc(100vh - 64px); width: 100vw;"></div>
+		<input type="file" id="file" style="display: none">
+	</body>
+</html>
