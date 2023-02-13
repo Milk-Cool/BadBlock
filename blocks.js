@@ -127,7 +127,7 @@ Blockly.defineBlocksWithJsonArray([
 	},
 	{
 		"type": "id",
-		"message0": "Set device ID to %1",
+		"message0": "Set VID:PID to %1",
 		"args0": [
 			{ "type": "field_input", "name": "ID" }
 		],
