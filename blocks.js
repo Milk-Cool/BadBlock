@@ -118,6 +118,10 @@ const combinations = [
 const prefixes = keys.slice(0, 4).concat(combinations);
 const chars = keys.slice(39);
 
+Blockly.Extensions.register("vid_pid_extension", function(){
+	this.getField("ID").setValidator(value => /^\d{3}:\d{3}$/.test(value) ? value : "");
+});
+
 Blockly.defineBlocksWithJsonArray([
 	{
 		"type": "start",
@@ -133,7 +137,8 @@ Blockly.defineBlocksWithJsonArray([
 		],
 		"colour": 200,
 		"nextStatement": null,
-		"previousStatement": null
+		"previousStatement": null,
+		"extensions": [ "vid_pid_extension" ]
 	},
 	{
 		"type": "comment",
