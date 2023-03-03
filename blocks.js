@@ -119,7 +119,7 @@ const prefixes = keys.slice(0, 4).concat(combinations);
 const chars = keys.slice(39);
 
 Blockly.Extensions.register("vid_pid_extension", function(){
-	this.getField("ID").setValidator(value => /^\d{3}:\d{3}$/.test(value) ? value : "");
+	this.getField("ID").setValidator(value => /^[0-9a-fA-F]{3}:[0-9a-fA-F]{3}$/.test(value) ? value : "");
 });
 
 Blockly.defineBlocksWithJsonArray([
